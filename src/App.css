@@ -2,7 +2,7 @@
 
   display : flex;
   margin-left: 500px;
-  margin-top: -440px;
+  margin-top: -460px;
   flex-direction : column;
   text-align: center;
   background-image: url('snap.jpg');
@@ -27,12 +27,14 @@ border-image: fill;
   background: transparent;
 }
 .head{
-  font-size: 30px;
+  font-size: 35px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-left: 650px;
+  padding-left: 600px;
 }
 .changes{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  margin-top: 40px;
 }
 .button{
   border-color: brown;

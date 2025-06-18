@@ -139,12 +139,13 @@ if (player1Cell && player2Cell && num1 === num2) {
       <p>Player red: {num1}</p>
       <p>Player green: {num2}</p>
        <img src ={images} height= "50px" width =" 50px"></img>
-       <h1>{win}</h1>
-      </div>
-      <p>{gameOver}</p>
-      <div className="board">
+       <h4>{win}</h4>
+       <div className="board">
         {board}
         </div>
+      </div>
+      <p>{gameOver}</p>
+      
 </>
   );
 }
