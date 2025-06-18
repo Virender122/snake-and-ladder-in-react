@@ -1,0 +1,43 @@
+.board {
+
+  display : flex;
+  margin-left: 500px;
+  margin-top: -440px;
+  flex-direction : column;
+  text-align: center;
+  background-image: url('snap.jpg');
+  background-size: cover;
+  border-radius: 10px;
+border-image: fill;
+  
+}
+.cell{
+  display: flex;
+  width: 90px;
+  padding-left: 20px;
+  padding-top: 10px;
+  border-radius: 60px;
+}
+.row{
+  display: flex;
+  height: 70px;
+  width: 600px;
+  height: 60px;
+  border-radius: 10px; 
+  background: transparent;
+}
+.head{
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 650px;
+}
+.changes{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button{
+  border-color: brown;
+  border-style: double;
+  background-color: aquamarine;
+  font-size: 40px;
+  text-shadow: 12px;
+}
