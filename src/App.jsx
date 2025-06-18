@@ -14,7 +14,7 @@ const Snakes = {
    95: 36, 92: 52,  81: 78,  50: 16,  40: 20 
   };
   const ladders ={
-    4: 22, 10: 29, 14: 77, 33: 51,64: 82, 74: 90
+    4: 22, 10: 29, 14: 77, 33: 51,64: 82, 74: 92
   };
   const diceAudio = new Audio(dice);
   const ladderAudio = new Audio(ladder);
@@ -89,7 +89,7 @@ function App() {
       let next = num2 + dice <= 100 ? num2 + dice : num2;
       if(next===100){
         setWin("green win")
-        setGameOver(false)
+        setGameOver(true)
       }
      else if(Snakes[next]){
         next =Snakes[next]
@@ -129,7 +129,7 @@ if (player1Cell && player2Cell && num1 === num2) {
   }
 }
 
-  }, [num1, num2]);
+  });
   return (<>
       <h1 className="head">🐍Snake and 🪜Ladder</h1><br></br>
       <br /><div className ="changes">
@@ -139,7 +139,7 @@ if (player1Cell && player2Cell && num1 === num2) {
       <p>Player red: {num1}</p>
       <p>Player green: {num2}</p>
        <img src ={images} height= "50px" width =" 50px"></img>
-       <h4>{win}</h4>
+       <p>{win}</p>
        <div className="board">
         {board}
         </div>
