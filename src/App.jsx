@@ -14,7 +14,7 @@ const Snakes = {
    95: 36, 92: 52,  81: 78,  50: 16,  40: 20 
   };
   const ladders ={
-    4: 22, 10: 29, 14: 77, 33: 51,64: 82, 74: 92
+    4: 22, 10: 29, 14: 77, 33: 51,64: 82, 74: 90
   };
   const diceAudio = new Audio(dice);
   const ladderAudio = new Audio(ladder);
