@@ -14,7 +14,7 @@ const Snakes = {
    95: 36, 92: 52,  81: 78,  50: 16,  40: 20 
   };
   const ladders ={
-    4: 22, 10: 29, 14: 77, 33: 51,64: 82, 74: 92
+    4: 22, 10: 29, 14: 77, 33: 51,64: 82, 74: 90
   };
   const diceAudio = new Audio(dice);
   const ladderAudio = new Audio(ladder);
@@ -72,7 +72,7 @@ function App() {
       if(next===100){
         setWin("red winner")
         winAudio.play();
-           setGameOver(false)
+           setGameOver(true)
       }
       else if(Snakes[next]){
         next =Snakes[next]
@@ -89,7 +89,7 @@ function App() {
       let next = num2 + dice <= 100 ? num2 + dice : num2;
       if(next===100){
         setWin("green win")
-        setGameOver(true)
+        setGameOver(false)
       }
      else if(Snakes[next]){
         next =Snakes[next]
